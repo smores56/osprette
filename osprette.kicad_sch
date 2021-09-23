@@ -63,6 +63,38 @@
         )
       )
     )
+    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (id 0) (at 0 6.35 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MountingHole_Pad" (id 1) (at 0 4.445 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "mounting hole" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole with connection" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*Pad*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MountingHole_Pad_0_1"
+        (circle (center 0 1.27) (radius 1.27) (stroke (width 1.27)) (fill (type none)))
+      )
+      (symbol "MountingHole_Pad_1_1"
+        (pin input line (at 0 -2.54 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (id 0) (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -106,6 +138,54 @@
         (pin passive line (at 5.08 0 180) (length 2.54)
           (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Switch:SW_SPDT" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (id 0) (at 0 4.318 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SW_SPDT" (id 1) (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "switch single-pole double-throw spdt ON-ON" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Switch, single pole double throw" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SW_SPDT_0_0"
+        (circle (center -2.032 0) (radius 0.508) (stroke (width 0)) (fill (type none)))
+        (circle (center 2.032 -2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
+      )
+      (symbol "SW_SPDT_0_1"
+        (circle (center 2.032 2.54) (radius 0.508) (stroke (width 0)) (fill (type none)))
+        (polyline
+          (pts
+            (xy -1.524 0.254)
+            (xy 1.651 2.286)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "SW_SPDT_1_1"
+        (pin passive line (at 5.08 2.54 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 -2.54 180) (length 2.54)
+          (name "C" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -322,7 +402,6 @@
   (junction (at 181.61 53.34) (diameter 0) (color 0 0 0 0))
   (junction (at 181.61 80.01) (diameter 0) (color 0 0 0 0))
 
-  (no_connect (at 229.87 57.15) (uuid f2999ec2-c045-41bc-bfeb-271f43c9fe82))
   (no_connect (at 229.87 64.77) (uuid f2999ec2-c045-41bc-bfeb-271f43c9fe82))
   (no_connect (at 229.87 67.31) (uuid f2999ec2-c045-41bc-bfeb-271f43c9fe82))
   (no_connect (at 265.43 57.15) (uuid f2999ec2-c045-41bc-bfeb-271f43c9fe82))
@@ -873,7 +952,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid b3328bac-5f2e-4a87-837e-52c5dd509a9e)
   )
-  (wire (pts (xy 251.46 127) (xy 254 127))
+  (wire (pts (xy 210.82 110.49) (xy 213.36 110.49))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 56aa7b6c-b778-42c5-a0d3-b9f484ebc036)
   )
@@ -983,11 +1062,25 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "gnd" (shape input) (at 210.82 110.49 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 0861f436-0ea4-4b1c-ab90-6a211127608f)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 205.0995 110.4106 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "gnd" (shape input) (at 215.9 127 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid e61eec5c-d913-40d8-9715-64a7f63a5cc2)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 221.6205 126.9206 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "raw" (shape input) (at 229.87 57.15 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid add2e71c-f9e6-49cd-98d8-2dfd58c0813f)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 224.3309 57.0706 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "gnd" (shape input) (at 229.87 59.69 180) (fields_autoplaced)
@@ -1053,10 +1146,31 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "gnd" (shape input) (at 251.46 127 180) (fields_autoplaced)
+  (global_label "bat+" (shape input) (at 231.14 127 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 0861f436-0ea4-4b1c-ab90-6a211127608f)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 245.7395 126.9206 0)
+    (uuid 0c44cfb5-f4ee-43c9-98fd-050e1918d3ae)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 231.0606 133.8696 90)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "bat+" (shape input) (at 243.84 109.22 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 3da238de-9385-4151-867d-d83262974221)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 236.9704 109.1406 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "raw" (shape input) (at 254 111.76 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 8976c502-155c-406c-9a0a-cf60c7f3a01b)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 259.5391 111.6806 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "gnd" (shape input) (at 257.81 127 270) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 55202b62-01d3-4cfd-bf29-28636ad4b761)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 257.7306 132.7205 90)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1124,19 +1238,19 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 254 127 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 213.36 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b4ed6d1e-fb2a-47c4-8e51-d8ca74d9ce39)
-    (property "Reference" "#PWR0101" (id 0) (at 260.35 127 0)
+    (property "Reference" "#PWR0101" (id 0) (at 219.71 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (id 1) (at 257.81 126.9999 90)
+    (property "Value" "GND" (id 1) (at 217.17 110.4899 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 254 127 0)
+    (property "Footprint" "" (id 2) (at 213.36 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 254 127 0)
+    (property "Datasheet" "" (id 3) (at 213.36 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5e481357-80ca-4a67-917f-c149ba371b62))
@@ -1164,7 +1278,7 @@
   (symbol (lib_id "Diode:1N4148") (at 41.91 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 55444215-a45c-4c7f-91f2-d69ae746432c)
-    (property "Reference" "D2" (id 0) (at 44.45 74.9299 90)
+    (property "Reference" "D11" (id 0) (at 44.45 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 44.45 77.4699 90)
@@ -1183,7 +1297,7 @@
   (symbol (lib_id "Diode:1N4148") (at 41.91 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9a60f6a7-5f6f-4149-b90d-3d878346d442)
-    (property "Reference" "D3" (id 0) (at 44.45 101.5999 90)
+    (property "Reference" "D21" (id 0) (at 44.45 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 44.45 104.1399 90)
@@ -1202,7 +1316,7 @@
   (symbol (lib_id "Diode:1N4148") (at 57.15 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid aada288d-ecac-47ee-b1e5-18a98a9b36ea)
-    (property "Reference" "D4" (id 0) (at 59.69 48.2599 90)
+    (property "Reference" "D2" (id 0) (at 59.69 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 59.69 50.7999 90)
@@ -1221,7 +1335,7 @@
   (symbol (lib_id "Diode:1N4148") (at 57.15 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 44a6e577-0b6e-4f69-b9c1-36cdddd31313)
-    (property "Reference" "D5" (id 0) (at 59.69 74.9299 90)
+    (property "Reference" "D12" (id 0) (at 59.69 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 59.69 77.4699 90)
@@ -1240,7 +1354,7 @@
   (symbol (lib_id "Diode:1N4148") (at 57.15 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7b544111-7231-463d-a8ab-c42f4a9cc7db)
-    (property "Reference" "D6" (id 0) (at 59.69 101.5999 90)
+    (property "Reference" "D22" (id 0) (at 59.69 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 59.69 104.1399 90)
@@ -1259,7 +1373,7 @@
   (symbol (lib_id "Diode:1N4148") (at 72.39 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 790da7ee-70a8-43e4-a68c-ea4d88926a16)
-    (property "Reference" "D7" (id 0) (at 74.93 48.2599 90)
+    (property "Reference" "D3" (id 0) (at 74.93 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 74.93 50.7999 90)
@@ -1278,7 +1392,7 @@
   (symbol (lib_id "Diode:1N4148") (at 72.39 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 35744345-c3dd-4d15-b014-fea2a63f71d6)
-    (property "Reference" "D8" (id 0) (at 74.93 74.9299 90)
+    (property "Reference" "D13" (id 0) (at 74.93 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 74.93 77.4699 90)
@@ -1297,7 +1411,7 @@
   (symbol (lib_id "Diode:1N4148") (at 72.39 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 35526a93-adc7-4d62-8a5a-ca536e1993c1)
-    (property "Reference" "D9" (id 0) (at 74.93 101.5999 90)
+    (property "Reference" "D23" (id 0) (at 74.93 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 74.93 104.1399 90)
@@ -1316,7 +1430,7 @@
   (symbol (lib_id "Diode:1N4148") (at 87.63 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 33126b29-18ab-4f0a-b891-875c83443f24)
-    (property "Reference" "D10" (id 0) (at 90.17 48.2599 90)
+    (property "Reference" "D4" (id 0) (at 90.17 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 90.17 50.7999 90)
@@ -1335,7 +1449,7 @@
   (symbol (lib_id "Diode:1N4148") (at 87.63 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a4dea3f4-84b5-479d-95ea-e318f32f9fdb)
-    (property "Reference" "D11" (id 0) (at 90.17 74.9299 90)
+    (property "Reference" "D14" (id 0) (at 90.17 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 90.17 77.4699 90)
@@ -1354,7 +1468,7 @@
   (symbol (lib_id "Diode:1N4148") (at 87.63 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 30ddf4ae-817a-4d7c-a6fe-4ba8f6c6a454)
-    (property "Reference" "D12" (id 0) (at 90.17 101.5999 90)
+    (property "Reference" "D24" (id 0) (at 90.17 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 90.17 104.1399 90)
@@ -1373,7 +1487,7 @@
   (symbol (lib_id "Diode:1N4148") (at 87.63 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 11b639cf-48f1-474d-92ac-44ec9c214c75)
-    (property "Reference" "D13" (id 0) (at 90.17 128.2699 90)
+    (property "Reference" "D31" (id 0) (at 90.17 128.2699 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 90.17 130.8099 90)
@@ -1392,7 +1506,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 46350da9-50e8-4db6-b717-35e1d42a26c5)
-    (property "Reference" "D14" (id 0) (at 105.41 48.2599 90)
+    (property "Reference" "D5" (id 0) (at 105.41 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 50.7999 90)
@@ -1430,7 +1544,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d09553f0-0f69-42f8-869b-3ffc2b09891d)
-    (property "Reference" "D16" (id 0) (at 105.41 101.5999 90)
+    (property "Reference" "D25" (id 0) (at 105.41 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 104.1399 90)
@@ -1449,7 +1563,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ba67e0f3-6d34-4fcd-8c8b-9fadfe58f696)
-    (property "Reference" "D17" (id 0) (at 105.41 128.2699 90)
+    (property "Reference" "D32" (id 0) (at 105.41 128.2699 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 130.8099 90)
@@ -1468,7 +1582,7 @@
   (symbol (lib_id "Diode:1N4148") (at 118.11 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2c39659a-3487-422b-9478-186d3f323327)
-    (property "Reference" "D18" (id 0) (at 120.65 48.2599 90)
+    (property "Reference" "D6" (id 0) (at 120.65 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 120.65 50.7999 90)
@@ -1487,7 +1601,7 @@
   (symbol (lib_id "Diode:1N4148") (at 118.11 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a18eead1-a875-41e5-a0d6-b241ba2f37f2)
-    (property "Reference" "D19" (id 0) (at 120.65 74.9299 90)
+    (property "Reference" "D16" (id 0) (at 120.65 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 120.65 77.4699 90)
@@ -1506,7 +1620,7 @@
   (symbol (lib_id "Diode:1N4148") (at 118.11 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 658ebdad-69b6-46f8-862e-46bfb5376bf9)
-    (property "Reference" "D20" (id 0) (at 120.65 101.5999 90)
+    (property "Reference" "D26" (id 0) (at 120.65 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 120.65 104.1399 90)
@@ -1525,7 +1639,7 @@
   (symbol (lib_id "Diode:1N4148") (at 118.11 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 31dbbdd0-0357-469d-9696-231ca39a1453)
-    (property "Reference" "D21" (id 0) (at 120.65 128.2699 90)
+    (property "Reference" "D33" (id 0) (at 120.65 128.2699 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 120.65 130.8099 90)
@@ -1544,7 +1658,7 @@
   (symbol (lib_id "Diode:1N4148") (at 133.35 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0ec37d76-760c-4d24-b7eb-7fea0ed87efb)
-    (property "Reference" "D22" (id 0) (at 135.89 48.2599 90)
+    (property "Reference" "D7" (id 0) (at 135.89 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 135.89 50.7999 90)
@@ -1563,7 +1677,7 @@
   (symbol (lib_id "Diode:1N4148") (at 133.35 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ce4aa568-90b5-4455-b83d-204403680469)
-    (property "Reference" "D23" (id 0) (at 135.89 74.9299 90)
+    (property "Reference" "D17" (id 0) (at 135.89 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 135.89 77.4699 90)
@@ -1582,7 +1696,7 @@
   (symbol (lib_id "Diode:1N4148") (at 133.35 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b820cec5-ddc7-4a05-a6a9-78ea20d2a076)
-    (property "Reference" "D24" (id 0) (at 135.89 101.5999 90)
+    (property "Reference" "D27" (id 0) (at 135.89 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 135.89 104.1399 90)
@@ -1601,7 +1715,7 @@
   (symbol (lib_id "Diode:1N4148") (at 133.35 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8f8b033f-9e85-4db8-9b4d-d7a95e376646)
-    (property "Reference" "D25" (id 0) (at 135.89 128.2699 90)
+    (property "Reference" "D34" (id 0) (at 135.89 128.2699 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 135.89 130.8099 90)
@@ -1620,7 +1734,7 @@
   (symbol (lib_id "Diode:1N4148") (at 148.59 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3f368fc7-dde4-4e67-ab40-309d1fe53541)
-    (property "Reference" "D26" (id 0) (at 151.13 48.2599 90)
+    (property "Reference" "D8" (id 0) (at 151.13 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 151.13 50.7999 90)
@@ -1639,7 +1753,7 @@
   (symbol (lib_id "Diode:1N4148") (at 148.59 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d4195645-d9b4-44b2-a2bf-38df841660e9)
-    (property "Reference" "D27" (id 0) (at 151.13 74.9299 90)
+    (property "Reference" "D18" (id 0) (at 151.13 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 151.13 77.4699 90)
@@ -1677,7 +1791,7 @@
   (symbol (lib_id "Diode:1N4148") (at 163.83 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a270a43c-aae8-4161-b315-33686edc6a5b)
-    (property "Reference" "D29" (id 0) (at 166.37 48.2599 90)
+    (property "Reference" "D9" (id 0) (at 166.37 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 166.37 50.7999 90)
@@ -1696,7 +1810,7 @@
   (symbol (lib_id "Diode:1N4148") (at 163.83 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f51245fb-2bc9-4249-901f-a1f80bd09d61)
-    (property "Reference" "D30" (id 0) (at 166.37 74.9299 90)
+    (property "Reference" "D19" (id 0) (at 166.37 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 166.37 77.4699 90)
@@ -1715,7 +1829,7 @@
   (symbol (lib_id "Diode:1N4148") (at 163.83 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 676804ca-2c76-42ab-8506-21878e7e953e)
-    (property "Reference" "D31" (id 0) (at 166.37 101.5999 90)
+    (property "Reference" "D29" (id 0) (at 166.37 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 166.37 104.1399 90)
@@ -1734,7 +1848,7 @@
   (symbol (lib_id "Diode:1N4148") (at 179.07 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f7cf08d1-10f6-40a4-9bae-7261615528ce)
-    (property "Reference" "D32" (id 0) (at 181.61 48.2599 90)
+    (property "Reference" "D10" (id 0) (at 181.61 48.2599 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 181.61 50.7999 90)
@@ -1753,7 +1867,7 @@
   (symbol (lib_id "Diode:1N4148") (at 179.07 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f536287f-ca09-4e9e-ac55-0c216b2b978b)
-    (property "Reference" "D33" (id 0) (at 181.61 74.9299 90)
+    (property "Reference" "D20" (id 0) (at 181.61 74.9299 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 181.61 77.4699 90)
@@ -1772,7 +1886,7 @@
   (symbol (lib_id "Diode:1N4148") (at 179.07 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b9021cf7-f1a7-46a2-9516-0d6fb3035023)
-    (property "Reference" "D34" (id 0) (at 181.61 101.5999 90)
+    (property "Reference" "D30" (id 0) (at 181.61 101.5999 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1N4148" (id 1) (at 181.61 104.1399 90)
@@ -1786,6 +1900,42 @@
     )
     (pin "1" (uuid c7a0d7e4-a3b0-43bd-b8a7-e7900f678474))
     (pin "2" (uuid c105846a-cf9d-4e7a-a9de-3c2ffde2c4a2))
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 231.14 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid d5b8c685-5488-448c-8fdb-87f76c351a0b)
+    (property "Reference" "+1" (id 0) (at 234.95 122.8724 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (id 1) (at 234.95 125.4124 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "kbd:1pin_conn" (id 2) (at 231.14 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 231.14 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 75f366ef-2adb-4d5d-a2bb-199fe53da4c7))
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 257.81 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 5c51ccf3-555a-4c0c-9ebb-1cfcc12164b0)
+    (property "Reference" "-1" (id 0) (at 261.62 122.8724 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (id 1) (at 261.62 125.4124 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "kbd:1pin_conn" (id 2) (at 257.81 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 257.81 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bc5bd735-376e-4c25-9638-f7f0746e3387))
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 36.83 45.72 0) (unit 1)
@@ -1806,7 +1956,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 36.83 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4ba2ffde-2b40-4081-a772-522d184b79b4)
-    (property "Reference" "SW2" (id 0) (at 36.83 64.77 0))
+    (property "Reference" "SW11" (id 0) (at 36.83 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 36.83 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 36.83 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1821,7 +1971,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 36.83 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f87d7ab2-7f5a-4ba2-9315-a6dcc29947ae)
-    (property "Reference" "SW3" (id 0) (at 36.83 91.44 0))
+    (property "Reference" "SW21" (id 0) (at 36.83 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 36.83 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 36.83 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1836,7 +1986,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 52.07 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 598e517d-cf98-4d2a-93a9-23198f18d317)
-    (property "Reference" "SW4" (id 0) (at 52.07 38.1 0))
+    (property "Reference" "SW2" (id 0) (at 52.07 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 52.07 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 52.07 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1851,7 +2001,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 52.07 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e68c008c-9a69-4c87-8e44-e8c02eaf6937)
-    (property "Reference" "SW5" (id 0) (at 52.07 64.77 0))
+    (property "Reference" "SW12" (id 0) (at 52.07 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 52.07 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 52.07 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1866,7 +2016,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 52.07 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bd262fec-6925-4b5c-adde-b1a7b2d4278f)
-    (property "Reference" "SW6" (id 0) (at 52.07 91.44 0))
+    (property "Reference" "SW22" (id 0) (at 52.07 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 52.07 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 52.07 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1881,7 +2031,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 67.31 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b107fa33-e302-45bc-bc80-8f055175f40f)
-    (property "Reference" "SW7" (id 0) (at 67.31 38.1 0))
+    (property "Reference" "SW3" (id 0) (at 67.31 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 67.31 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 67.31 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1896,7 +2046,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 67.31 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 67957784-c562-4782-bf6c-fd6a6c5eccde)
-    (property "Reference" "SW8" (id 0) (at 67.31 64.77 0))
+    (property "Reference" "SW13" (id 0) (at 67.31 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 67.31 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 67.31 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1911,7 +2061,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 67.31 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 07c31331-2e98-4c60-8358-409124609a35)
-    (property "Reference" "SW9" (id 0) (at 67.31 91.44 0))
+    (property "Reference" "SW23" (id 0) (at 67.31 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 67.31 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 67.31 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1926,7 +2076,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 82.55 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 6f24b7dc-df2d-4395-a250-4833d124c162)
-    (property "Reference" "SW10" (id 0) (at 82.55 38.1 0))
+    (property "Reference" "SW4" (id 0) (at 82.55 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 82.55 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 82.55 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1941,7 +2091,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 82.55 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5037633a-a8ed-441f-90bb-745ac372c8d3)
-    (property "Reference" "SW11" (id 0) (at 82.55 64.77 0))
+    (property "Reference" "SW14" (id 0) (at 82.55 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 82.55 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 82.55 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1956,7 +2106,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 82.55 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a82d947b-ea0b-4704-8b5a-7af8a6b3fff6)
-    (property "Reference" "SW12" (id 0) (at 82.55 91.44 0))
+    (property "Reference" "SW24" (id 0) (at 82.55 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 82.55 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 82.55 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1971,7 +2121,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 82.55 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 900be835-59f3-4bad-9ae5-44b42bee657d)
-    (property "Reference" "SW13" (id 0) (at 82.55 118.11 0))
+    (property "Reference" "SW31" (id 0) (at 82.55 118.11 0))
     (property "Value" "SW_Push" (id 1) (at 82.55 120.65 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 82.55 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1986,7 +2136,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 97.79 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ff02b4c8-cfb3-444c-9b2f-13a9f17dbf07)
-    (property "Reference" "SW14" (id 0) (at 97.79 38.1 0))
+    (property "Reference" "SW5" (id 0) (at 97.79 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 97.79 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 97.79 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2016,7 +2166,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 97.79 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9db75ba3-d240-4412-9e45-8db1f97f8a53)
-    (property "Reference" "SW16" (id 0) (at 97.79 91.44 0))
+    (property "Reference" "SW25" (id 0) (at 97.79 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 97.79 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 97.79 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2031,7 +2181,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 97.79 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5d360a7f-2458-43d1-9f30-6aa6a86a6159)
-    (property "Reference" "SW17" (id 0) (at 97.79 118.11 0))
+    (property "Reference" "SW32" (id 0) (at 97.79 118.11 0))
     (property "Value" "SW_Push" (id 1) (at 97.79 120.65 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 97.79 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2046,7 +2196,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 113.03 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 46d120f3-a0cd-4a5c-8510-763177e210ad)
-    (property "Reference" "SW18" (id 0) (at 113.03 38.1 0))
+    (property "Reference" "SW6" (id 0) (at 113.03 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 113.03 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 113.03 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2061,7 +2211,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 113.03 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 110996af-03b7-413e-aaab-1690c87e350a)
-    (property "Reference" "SW19" (id 0) (at 113.03 64.77 0))
+    (property "Reference" "SW16" (id 0) (at 113.03 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 113.03 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 113.03 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2076,7 +2226,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 113.03 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9f775b33-04d2-4f43-b7dc-eadfb6023b45)
-    (property "Reference" "SW20" (id 0) (at 113.03 91.44 0))
+    (property "Reference" "SW26" (id 0) (at 113.03 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 113.03 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 113.03 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2091,7 +2241,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 113.03 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 87ab3917-84c9-4dbb-a592-eb72ece522d8)
-    (property "Reference" "SW21" (id 0) (at 113.03 118.11 0))
+    (property "Reference" "SW33" (id 0) (at 113.03 118.11 0))
     (property "Value" "SW_Push" (id 1) (at 113.03 120.65 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 113.03 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2106,7 +2256,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 128.27 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d3c34926-b9ab-46a9-9a32-4ececb181443)
-    (property "Reference" "SW22" (id 0) (at 128.27 38.1 0))
+    (property "Reference" "SW7" (id 0) (at 128.27 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 128.27 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 128.27 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2121,7 +2271,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 128.27 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 96e7d1b1-08de-4f8f-9036-a6213fdae27d)
-    (property "Reference" "SW23" (id 0) (at 128.27 64.77 0))
+    (property "Reference" "SW17" (id 0) (at 128.27 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 128.27 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 128.27 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2136,7 +2286,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 128.27 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4370d4fb-cea5-455b-933a-5b22a3cf6e8e)
-    (property "Reference" "SW24" (id 0) (at 128.27 91.44 0))
+    (property "Reference" "SW27" (id 0) (at 128.27 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 128.27 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 128.27 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2151,7 +2301,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 128.27 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 21aa4480-1aa2-427d-812e-6e5f82d7b78f)
-    (property "Reference" "SW25" (id 0) (at 128.27 118.11 0))
+    (property "Reference" "SW34" (id 0) (at 128.27 118.11 0))
     (property "Value" "SW_Push" (id 1) (at 128.27 120.65 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 128.27 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2166,7 +2316,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 143.51 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 172169f3-3c61-4b1b-9a05-b19ae93a60fb)
-    (property "Reference" "SW26" (id 0) (at 143.51 38.1 0))
+    (property "Reference" "SW8" (id 0) (at 143.51 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 143.51 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 143.51 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2181,7 +2331,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 143.51 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ab14aa2f-b4a8-467a-96a0-4d7e6075d33e)
-    (property "Reference" "SW27" (id 0) (at 143.51 64.77 0))
+    (property "Reference" "SW18" (id 0) (at 143.51 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 143.51 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 143.51 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2211,7 +2361,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 158.75 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bd2fc924-e08d-48c0-aeef-9ada3954ac72)
-    (property "Reference" "SW29" (id 0) (at 158.75 38.1 0))
+    (property "Reference" "SW9" (id 0) (at 158.75 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 158.75 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 158.75 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2226,7 +2376,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 158.75 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2056a144-5309-4736-98f8-45ff07ec82a5)
-    (property "Reference" "SW30" (id 0) (at 158.75 64.77 0))
+    (property "Reference" "SW19" (id 0) (at 158.75 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 158.75 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 158.75 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2241,7 +2391,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 158.75 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 783ed2f2-a768-46a1-a358-b3d04c283315)
-    (property "Reference" "SW31" (id 0) (at 158.75 91.44 0))
+    (property "Reference" "SW29" (id 0) (at 158.75 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 158.75 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 158.75 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2256,7 +2406,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 173.99 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 74d1133b-1345-4196-9a00-44263830e9e6)
-    (property "Reference" "SW32" (id 0) (at 173.99 38.1 0))
+    (property "Reference" "SW10" (id 0) (at 173.99 38.1 0))
     (property "Value" "SW_Push" (id 1) (at 173.99 40.64 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 173.99 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2271,7 +2421,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 173.99 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5b822399-d91d-4863-b96e-e4198751135d)
-    (property "Reference" "SW33" (id 0) (at 173.99 64.77 0))
+    (property "Reference" "SW20" (id 0) (at 173.99 64.77 0))
     (property "Value" "SW_Push" (id 1) (at 173.99 67.31 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 173.99 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2286,7 +2436,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 173.99 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 80053b58-76c8-46f7-95f9-4fefc9e2f302)
-    (property "Reference" "SW34" (id 0) (at 173.99 91.44 0))
+    (property "Reference" "SW30" (id 0) (at 173.99 91.44 0))
     (property "Value" "SW_Push" (id 1) (at 173.99 93.98 0))
     (property "Footprint" "keyswitches:Kailh_socket_PG1350_optional" (id 2) (at 173.99 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2311,6 +2461,22 @@
     )
     (pin "1" (uuid 3e8fb1af-acf1-4e72-90b7-d5ea404fb282))
     (pin "2" (uuid 3c8cec79-7864-443f-952b-338165dc192e))
+  )
+
+  (symbol (lib_id "Switch:SW_SPDT") (at 248.92 109.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid ca95932a-2221-449c-bfc5-390f750d8d4c)
+    (property "Reference" "SW36" (id 0) (at 248.92 101.6 0))
+    (property "Value" "SW_SPDT" (id 1) (at 248.92 104.14 0))
+    (property "Footprint" "Button_Switch_SMD:SW_SPDT_PCM12" (id 2) (at 248.92 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 248.92 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f2977b43-c2ee-4902-aef4-51a15e09261e))
+    (pin "2" (uuid d84f6551-9513-48b6-8085-43b3d1a4dad6))
+    (pin "3" (uuid 3d80c118-b26a-4738-a524-33b6b439dcb7))
   )
 
   (symbol (lib_id "kbd:ProMicro_r") (at 246.38 74.93 0) (unit 1)
@@ -2362,212 +2528,221 @@
     (path "/b4ed6d1e-fb2a-47c4-8e51-d8ca74d9ce39"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
+    (path "/d5b8c685-5488-448c-8fdb-87f76c351a0b"
+      (reference "+1") (unit 1) (value "MountingHole_Pad") (footprint "kbd:1pin_conn")
+    )
+    (path "/5c51ccf3-555a-4c0c-9ebb-1cfcc12164b0"
+      (reference "-1") (unit 1) (value "MountingHole_Pad") (footprint "kbd:1pin_conn")
+    )
     (path "/c2073bea-395e-4cc5-8539-fb89e8b8c531"
       (reference "D1") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/55444215-a45c-4c7f-91f2-d69ae746432c"
+    (path "/aada288d-ecac-47ee-b1e5-18a98a9b36ea"
       (reference "D2") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/9a60f6a7-5f6f-4149-b90d-3d878346d442"
+    (path "/790da7ee-70a8-43e4-a68c-ea4d88926a16"
       (reference "D3") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/aada288d-ecac-47ee-b1e5-18a98a9b36ea"
+    (path "/33126b29-18ab-4f0a-b891-875c83443f24"
       (reference "D4") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/44a6e577-0b6e-4f69-b9c1-36cdddd31313"
+    (path "/46350da9-50e8-4db6-b717-35e1d42a26c5"
       (reference "D5") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/7b544111-7231-463d-a8ab-c42f4a9cc7db"
+    (path "/2c39659a-3487-422b-9478-186d3f323327"
       (reference "D6") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/790da7ee-70a8-43e4-a68c-ea4d88926a16"
+    (path "/0ec37d76-760c-4d24-b7eb-7fea0ed87efb"
       (reference "D7") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/35744345-c3dd-4d15-b014-fea2a63f71d6"
+    (path "/3f368fc7-dde4-4e67-ab40-309d1fe53541"
       (reference "D8") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/35526a93-adc7-4d62-8a5a-ca536e1993c1"
+    (path "/a270a43c-aae8-4161-b315-33686edc6a5b"
       (reference "D9") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/33126b29-18ab-4f0a-b891-875c83443f24"
+    (path "/f7cf08d1-10f6-40a4-9bae-7261615528ce"
       (reference "D10") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/a4dea3f4-84b5-479d-95ea-e318f32f9fdb"
+    (path "/55444215-a45c-4c7f-91f2-d69ae746432c"
       (reference "D11") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/30ddf4ae-817a-4d7c-a6fe-4ba8f6c6a454"
+    (path "/44a6e577-0b6e-4f69-b9c1-36cdddd31313"
       (reference "D12") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/11b639cf-48f1-474d-92ac-44ec9c214c75"
+    (path "/35744345-c3dd-4d15-b014-fea2a63f71d6"
       (reference "D13") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/46350da9-50e8-4db6-b717-35e1d42a26c5"
+    (path "/a4dea3f4-84b5-479d-95ea-e318f32f9fdb"
       (reference "D14") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/980465cb-6252-4cdb-b063-f7c650d29b66"
       (reference "D15") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/d09553f0-0f69-42f8-869b-3ffc2b09891d"
+    (path "/a18eead1-a875-41e5-a0d6-b241ba2f37f2"
       (reference "D16") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/ba67e0f3-6d34-4fcd-8c8b-9fadfe58f696"
+    (path "/ce4aa568-90b5-4455-b83d-204403680469"
       (reference "D17") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/2c39659a-3487-422b-9478-186d3f323327"
+    (path "/d4195645-d9b4-44b2-a2bf-38df841660e9"
       (reference "D18") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/a18eead1-a875-41e5-a0d6-b241ba2f37f2"
+    (path "/f51245fb-2bc9-4249-901f-a1f80bd09d61"
       (reference "D19") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/658ebdad-69b6-46f8-862e-46bfb5376bf9"
+    (path "/f536287f-ca09-4e9e-ac55-0c216b2b978b"
       (reference "D20") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/31dbbdd0-0357-469d-9696-231ca39a1453"
+    (path "/9a60f6a7-5f6f-4149-b90d-3d878346d442"
       (reference "D21") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/0ec37d76-760c-4d24-b7eb-7fea0ed87efb"
+    (path "/7b544111-7231-463d-a8ab-c42f4a9cc7db"
       (reference "D22") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/ce4aa568-90b5-4455-b83d-204403680469"
+    (path "/35526a93-adc7-4d62-8a5a-ca536e1993c1"
       (reference "D23") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/b820cec5-ddc7-4a05-a6a9-78ea20d2a076"
+    (path "/30ddf4ae-817a-4d7c-a6fe-4ba8f6c6a454"
       (reference "D24") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/8f8b033f-9e85-4db8-9b4d-d7a95e376646"
+    (path "/d09553f0-0f69-42f8-869b-3ffc2b09891d"
       (reference "D25") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/3f368fc7-dde4-4e67-ab40-309d1fe53541"
+    (path "/658ebdad-69b6-46f8-862e-46bfb5376bf9"
       (reference "D26") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/d4195645-d9b4-44b2-a2bf-38df841660e9"
+    (path "/b820cec5-ddc7-4a05-a6a9-78ea20d2a076"
       (reference "D27") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/f3b4d25c-50b8-4dd3-b74f-e52181e5d262"
       (reference "D28") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/a270a43c-aae8-4161-b315-33686edc6a5b"
+    (path "/676804ca-2c76-42ab-8506-21878e7e953e"
       (reference "D29") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/f51245fb-2bc9-4249-901f-a1f80bd09d61"
+    (path "/b9021cf7-f1a7-46a2-9516-0d6fb3035023"
       (reference "D30") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/676804ca-2c76-42ab-8506-21878e7e953e"
+    (path "/11b639cf-48f1-474d-92ac-44ec9c214c75"
       (reference "D31") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/f7cf08d1-10f6-40a4-9bae-7261615528ce"
+    (path "/ba67e0f3-6d34-4fcd-8c8b-9fadfe58f696"
       (reference "D32") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/f536287f-ca09-4e9e-ac55-0c216b2b978b"
+    (path "/31dbbdd0-0357-469d-9696-231ca39a1453"
       (reference "D33") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
-    (path "/b9021cf7-f1a7-46a2-9516-0d6fb3035023"
+    (path "/8f8b033f-9e85-4db8-9b4d-d7a95e376646"
       (reference "D34") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/297992c2-6782-4748-a690-1d81e5123614"
       (reference "SW1") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/4ba2ffde-2b40-4081-a772-522d184b79b4"
+    (path "/598e517d-cf98-4d2a-93a9-23198f18d317"
       (reference "SW2") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/f87d7ab2-7f5a-4ba2-9315-a6dcc29947ae"
+    (path "/b107fa33-e302-45bc-bc80-8f055175f40f"
       (reference "SW3") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/598e517d-cf98-4d2a-93a9-23198f18d317"
+    (path "/6f24b7dc-df2d-4395-a250-4833d124c162"
       (reference "SW4") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/e68c008c-9a69-4c87-8e44-e8c02eaf6937"
+    (path "/ff02b4c8-cfb3-444c-9b2f-13a9f17dbf07"
       (reference "SW5") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/bd262fec-6925-4b5c-adde-b1a7b2d4278f"
+    (path "/46d120f3-a0cd-4a5c-8510-763177e210ad"
       (reference "SW6") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/b107fa33-e302-45bc-bc80-8f055175f40f"
+    (path "/d3c34926-b9ab-46a9-9a32-4ececb181443"
       (reference "SW7") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/67957784-c562-4782-bf6c-fd6a6c5eccde"
+    (path "/172169f3-3c61-4b1b-9a05-b19ae93a60fb"
       (reference "SW8") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/07c31331-2e98-4c60-8358-409124609a35"
+    (path "/bd2fc924-e08d-48c0-aeef-9ada3954ac72"
       (reference "SW9") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/6f24b7dc-df2d-4395-a250-4833d124c162"
+    (path "/74d1133b-1345-4196-9a00-44263830e9e6"
       (reference "SW10") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/5037633a-a8ed-441f-90bb-745ac372c8d3"
+    (path "/4ba2ffde-2b40-4081-a772-522d184b79b4"
       (reference "SW11") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/a82d947b-ea0b-4704-8b5a-7af8a6b3fff6"
+    (path "/e68c008c-9a69-4c87-8e44-e8c02eaf6937"
       (reference "SW12") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/900be835-59f3-4bad-9ae5-44b42bee657d"
+    (path "/67957784-c562-4782-bf6c-fd6a6c5eccde"
       (reference "SW13") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/ff02b4c8-cfb3-444c-9b2f-13a9f17dbf07"
+    (path "/5037633a-a8ed-441f-90bb-745ac372c8d3"
       (reference "SW14") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
     (path "/8105cff0-f505-4270-aa8d-239ac7585774"
       (reference "SW15") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/9db75ba3-d240-4412-9e45-8db1f97f8a53"
+    (path "/110996af-03b7-413e-aaab-1690c87e350a"
       (reference "SW16") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/5d360a7f-2458-43d1-9f30-6aa6a86a6159"
+    (path "/96e7d1b1-08de-4f8f-9036-a6213fdae27d"
       (reference "SW17") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/46d120f3-a0cd-4a5c-8510-763177e210ad"
+    (path "/ab14aa2f-b4a8-467a-96a0-4d7e6075d33e"
       (reference "SW18") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/110996af-03b7-413e-aaab-1690c87e350a"
+    (path "/2056a144-5309-4736-98f8-45ff07ec82a5"
       (reference "SW19") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/9f775b33-04d2-4f43-b7dc-eadfb6023b45"
+    (path "/5b822399-d91d-4863-b96e-e4198751135d"
       (reference "SW20") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/87ab3917-84c9-4dbb-a592-eb72ece522d8"
+    (path "/f87d7ab2-7f5a-4ba2-9315-a6dcc29947ae"
       (reference "SW21") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/d3c34926-b9ab-46a9-9a32-4ececb181443"
+    (path "/bd262fec-6925-4b5c-adde-b1a7b2d4278f"
       (reference "SW22") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/96e7d1b1-08de-4f8f-9036-a6213fdae27d"
+    (path "/07c31331-2e98-4c60-8358-409124609a35"
       (reference "SW23") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/4370d4fb-cea5-455b-933a-5b22a3cf6e8e"
+    (path "/a82d947b-ea0b-4704-8b5a-7af8a6b3fff6"
       (reference "SW24") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/21aa4480-1aa2-427d-812e-6e5f82d7b78f"
+    (path "/9db75ba3-d240-4412-9e45-8db1f97f8a53"
       (reference "SW25") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/172169f3-3c61-4b1b-9a05-b19ae93a60fb"
+    (path "/9f775b33-04d2-4f43-b7dc-eadfb6023b45"
       (reference "SW26") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/ab14aa2f-b4a8-467a-96a0-4d7e6075d33e"
+    (path "/4370d4fb-cea5-455b-933a-5b22a3cf6e8e"
       (reference "SW27") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
     (path "/4e8c6917-4dc1-4a2b-9e32-958518650162"
       (reference "SW28") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/bd2fc924-e08d-48c0-aeef-9ada3954ac72"
+    (path "/783ed2f2-a768-46a1-a358-b3d04c283315"
       (reference "SW29") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/2056a144-5309-4736-98f8-45ff07ec82a5"
+    (path "/80053b58-76c8-46f7-95f9-4fefc9e2f302"
       (reference "SW30") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/783ed2f2-a768-46a1-a358-b3d04c283315"
+    (path "/900be835-59f3-4bad-9ae5-44b42bee657d"
       (reference "SW31") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/74d1133b-1345-4196-9a00-44263830e9e6"
+    (path "/5d360a7f-2458-43d1-9f30-6aa6a86a6159"
       (reference "SW32") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/5b822399-d91d-4863-b96e-e4198751135d"
+    (path "/87ab3917-84c9-4dbb-a592-eb72ece522d8"
       (reference "SW33") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
-    (path "/80053b58-76c8-46f7-95f9-4fefc9e2f302"
+    (path "/21aa4480-1aa2-427d-812e-6e5f82d7b78f"
       (reference "SW34") (unit 1) (value "SW_Push") (footprint "keyswitches:Kailh_socket_PG1350_optional")
     )
     (path "/fe473f33-9457-457c-a7ad-a9c094ccd19b"
       (reference "SW35") (unit 1) (value "SW_Push") (footprint "kbd:ResetSW")
+    )
+    (path "/ca95932a-2221-449c-bfc5-390f750d8d4c"
+      (reference "SW36") (unit 1) (value "SW_SPDT") (footprint "Button_Switch_SMD:SW_SPDT_PCM12")
     )
     (path "/8ccf1158-26f1-4605-b215-f6614d56dc3a"
       (reference "U1") (unit 1) (value "ProMicro_r") (footprint "kbd:ProMicro_v3.5")
