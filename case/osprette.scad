@@ -1,7 +1,5 @@
-pcb_width = 266.8;
-pcb_height = 103.66;
 pcb_thickness = 1.6;
-pcb_inner_margin = 3;
+pcb_inner_margin = 2;
 pcb_outer_margin = 1;
 
 battery_width = 30;
@@ -11,21 +9,20 @@ battery_thickness = 5;
 case_height = 11;
 case_thickness = 1.5;
 component_thickness = 2.5;
-shell_height_margin = 8;
-shell_width_margin = 6;
+shell_margin = 3;
 
 tilt_angle = 6;
 
 mounting_hole_diameter = 2.5;
 mounting_hole_locations = [
-    [33.4, 8.7], [-33.4, 8.9],
-    [52.58, -23.5], [-52.7, -23.5],
+    [33.4, 8.7], [-33.3, 9],
+    [52.6, -23.5], [-52.6, -23.6],
     [91.5, 21], [-91.8, 21.1],
-    [120.6, 0.5], [-120.9, 0.4]
+    [120.8, 0.5], [-120.9, 0.4]
 ];
 
 module dxf_layer(name) {
-    translate([-148.6, 100, 0])
+    translate([-148.739, 100, 0])
     import("osprette.dxf", layer=name, center=true);
 }
 
@@ -40,16 +37,16 @@ module orient_to_top_of_case() {
 }
 
 module shell() {
-    resize([pcb_width + 2 * shell_width_margin, pcb_height + 2 * shell_height_margin, 0])
     rotate([180 - tilt_angle, 0, 180])
     linear_extrude(case_height * 2, center=true)
+    offset(delta=(pcb_outer_margin + shell_margin))
     edge();
 }
 
 module component_cutout() {
-    resize([pcb_width - 2 * pcb_inner_margin, pcb_height - 2 * pcb_inner_margin, 0])
     orient_to_top_of_case()
     linear_extrude(2 * (pcb_thickness + component_thickness), center=true)
+    offset(delta=-pcb_inner_margin)
     edge();
 }
 
@@ -59,10 +56,36 @@ module battery_cutout() {
     square([battery_width, battery_height], center=true);
 }
 
+module usb_cutout() {
+    width = 7.99 - pcb_outer_margin - shell_margin;
+
+    orient_to_top_of_case()
+    linear_extrude((pcb_thickness + 1.5) * 2, center=true)
+    square([width * 2, 15], center=true);
+}
+
+module wire_cutout() {
+    orient_to_top_of_case()
+    translate([0, 3.7, 1])
+    linear_extrude(pcb_thickness * 2, center=true)
+    square([15, 1.5], center=true);
+}
+
+module power_switch_cutout() {
+    width = 7.99 - pcb_outer_margin - shell_margin;
+
+    rotate([tilt_angle, 0, 0])
+    rotate([0, 90, 0])
+    linear_extrude(width * 2, center=true)
+    offset(delta=4, chamfer=true)
+    translate([-11.5, 12, 0])
+    square(4, center=true);
+}
+
 module pcb_tray() {
-    resize([pcb_width + pcb_outer_margin * 2, pcb_height + pcb_outer_margin * 2, 0])
     orient_to_top_of_case()
     linear_extrude(2 * pcb_thickness, center=true)
+    offset(delta=pcb_outer_margin)
     edge();
 }
 
@@ -97,10 +120,13 @@ difference() {
                 pcb_tray();
                 component_cutout();
                 battery_cutout();
+                usb_cutout();
+                wire_cutout();
+                power_switch_cutout();
                 mounting_hole_countersinks();
             };
-            translate([0, 0, pcb_width])
-            cube(pcb_width * 2, center=true);
+            translate([0, 0, 500])
+            cube(1000, center=true);
         };
         mounting_hole_struts();
     };
