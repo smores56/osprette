@@ -6,6 +6,12 @@ This repo contains design files for the PCB and case of my variation on Brow's
 compatible daughterboard. It comes with bluetooth support by way of battery
 terminals and a power switch.
 
+# Pictures
+
+![Osprette from the front](./images/osprette-front.jpg)
+![Osprette from an angle](./images/osprette-angled.jpg)
+![PCB front](./images/pcb-front.jpg)
+
 # Inspiration
 
 I am a big fan of the [Balbuzard][balbuzard], especially the secret choc version that
@@ -19,10 +25,6 @@ Brow sent to me. However, there were some things I wanted to change:
 
 All these things together make this board my next step in pursuing the best 34-key
 keeb with comfortable pinkies.
-
-# Pictures
-
-Coming soon, once I get the prototypes from JLC!
 
 # Ordering One
 
