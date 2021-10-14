@@ -23,7 +23,7 @@ mounting_hole_locations = [
 
 module dxf_layer(name) {
     translate([-148.739, 100, 0])
-    import("osprette.dxf", layer=name, center=true);
+    import("osprette.dxf", layer=name, center=true, $fn=400);
 }
 
 module pcb() dxf_layer("Edge");
@@ -90,25 +90,25 @@ module mounting_hole_struts() {
         orient_to_top_of_case()
         translate([location[0], location[1], pcb_thickness])
         linear_extrude(component_thickness, center=false)
-        circle(2.85);
+        circle(2.85, $fn=100);
     }
 }
 
 module mounting_drill_holes() {
     for (location = mounting_hole_locations) {
-         translate([location[0], location[1], 1])
         orient_to_top_of_case()
+        translate([location[0], location[1], 1])
         linear_extrude(case_height, center=false)
-        circle(1.3);
+        circle(1.3, $fn=100);
     }
 }
 
 module mounting_hole_countersinks() {
     for (location = mounting_hole_locations) {
         orient_to_top_of_case()
-        translate([location[0], location[1], pcb_thickness + component_thickness + case_thickness + 1])
+        translate([location[0], location[1], pcb_thickness + component_thickness + case_thickness + 0.5])
         linear_extrude(case_height * 4, center=false)
-        circle(2.85);
+        circle(3.5, $fn=100);
         
     }
 }
