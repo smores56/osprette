@@ -106,7 +106,7 @@ module mounting_drill_holes() {
 module mounting_hole_countersinks() {
     for (location = mounting_hole_locations) {
         orient_to_top_of_case()
-        translate([location[0], location[1], pcb_thickness + component_thickness + case_thickness + 0.5])
+        translate([location[0], location[1], pcb_thickness + component_thickness + case_thickness + 1])
         linear_extrude(case_height * 4, center=false)
         circle(3.5, $fn=100);
         
