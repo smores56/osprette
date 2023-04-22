@@ -6,12 +6,6 @@ This repo contains design files for the PCB and case of my variation on Brow's
 compatible daughterboard. It comes with bluetooth support by way of battery
 terminals and a power switch.
 
-# Pictures
-
-![Osprette from the front](./images/osprette-front.jpg)
-![Osprette from an angle](./images/osprette-angled.jpg)
-![PCB front](./images/pcb-front.jpg)
-
 # Inspiration
 
 I am a big fan of the [Balbuzard][balbuzard], especially the secret choc version that
@@ -31,6 +25,12 @@ keeb with comfortable pinkies.
 To order one of these from JLC, just upload the `osprette.zip` archive in the
 `pcb` directory to the Order Now page at jlcpcb.com, and make sure to set a 1.6mm
 thickness.
+
+# Pictures
+
+![Osprette from the front](./images/osprette-front.jpg)
+![Osprette from an angle](./images/osprette-angled.jpg)
+![PCB front](./images/pcb-front.jpg)
 
 
 [balbuzard]: https://github.com/brow/balbuzard
