@@ -1,6 +1,8 @@
 The Osprette Family
 ===================
 
+![The Osprangle, the newest Osprette](./osprangle/images/osprangle-1.jpg)
+
 The Osprette is a 34-key unibody keyboard with pinky clusters, my variation on
 Brow's [Balbuzard][balbuzard]. All the revisions and variants share the same
 layout and the same firmware, so they live in one repo now, a folder per board:
@@ -24,9 +26,10 @@ have firmware yet. My personal keymaps live in [qmk_userspace][qmk_userspace] an
 
 # Building
 
-These boards use my [smores.pretty][smores-pretty] KiCad library as a submodule,
-so clone with `--recurse-submodules`. The two oldest boards (Osprette and Osprette
-MX) still pull in Foostan's `kbd` and Daprice's `keyswitches.pretty` directly.
+Most of these boards use my [smores.pretty][smores-pretty] KiCad library as a
+submodule, so clone with `--recurse-submodules`. The two oldest boards (Osprette
+and Osprette MX) instead pull in Foostan's `kbd` and Daprice's
+`keyswitches.pretty`.
 
 The split half of the family is [the Clog][clog].
 

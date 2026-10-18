@@ -13,4 +13,4 @@ The split version of this board is [the Sephirette][sephirette].
 ![The Osprette MX](./images/osprette-mx-1.jpg)
 
 
-[sephirette]: https://github.com/smores56/sephirette
+[sephirette]: https://github.com/smores56/clog/tree/main/sephirette

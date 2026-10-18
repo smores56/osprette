@@ -1,10 +1,9 @@
 The Osprette
 ============
 
-This repo contains design files for the PCB and case of my variation on Brow's
-[Balbuzard][balbuzard]. The keyboard is a 34 key unibody that uses any pro-micro
-compatible daughterboard. It comes with bluetooth support by way of battery
-terminals and a power switch.
+The Osprette is a 34-key unibody keyboard, my variation on Brow's
+[Balbuzard][balbuzard]. It uses any pro-micro compatible daughterboard, with
+bluetooth support by way of battery terminals and a power switch.
 
 # Inspiration
 

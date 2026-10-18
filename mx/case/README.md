@@ -25,3 +25,7 @@ There are two ways to use this, with and without the plate.
 ![v1mx03](images/screw.jpg)
 ![v1mx04](images/full01.jpg)
 
+# Credits
+
+Case design by Sadek Baroudi.
+

@@ -22,7 +22,7 @@ otherwise they'll put one on the board somewhere randomly.
 
 Part Name                  | Quantity      | Notes                          | Link
 --------------------------:|:-------------:|:------------------------------:|:----
-PCB                        | 1             |                                | Look up hurr hurr
+PCB                        | 1             |                                | [JLC](https://jlcpcb.com)
 Choc V1 Switches           | 34            |                                | <https://mkultra.click/choc-switches>
 Choc Keycaps               | 34            |                                | <https://mkultra.click/mbk-factory-colors>
 SMD Diodes                 | 34            |                                | <https://www.aliexpress.com/item/3256802562651339.html>
