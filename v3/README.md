@@ -10,9 +10,8 @@ and make sure to set a 1.6mm thickness. Removing the order number is always reco
 
 # Pictures
 
-![KiCad Render](./images/kicad-render.png)
-
-_More to come when PCB's arrive!_
+![The Osprette V3](./images/osprette-v3-1.jpg)
+![KiCad render](./images/kicad-render.png)
 
 
 [osprette]: https://github.com/smores56/osprette

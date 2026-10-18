@@ -9,9 +9,8 @@ To order one of these from JLC, just upload the `roadkill.zip` archive to the Or
 
 # Pictures
 
-![KiCad Render](./images/kicad-render.png)
-
-_More to come when PCB's arrive!_
+![The Roadkill](./images/roadkill-1.jpg)
+![KiCad render](./images/kicad-render.png)
 
 
 [osprette]: https://github.com/smores56/osprette

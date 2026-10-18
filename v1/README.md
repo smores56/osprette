@@ -28,8 +28,7 @@ thickness.
 
 # Pictures
 
-![Osprette from the front](./images/osprette-front.jpg)
-![Osprette from an angle](./images/osprette-angled.jpg)
+![The Osprette](./images/osprette-1.jpg)
 ![PCB front](./images/pcb-front.jpg)
 
 

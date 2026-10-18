@@ -8,4 +8,9 @@ in the `case` folder.
 The split version of this board is [the Sephirette][sephirette].
 
 
+# Pictures
+
+![The Osprette MX](./images/osprette-mx-1.jpg)
+
+
 [sephirette]: https://github.com/smores56/sephirette

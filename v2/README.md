@@ -35,4 +35,5 @@ MCU Socket Pins            | 48 (optional) | Buy extras, these are slippery | <h
 
 ## Pictures
 
-![](./pictures/pcb-screenshot.jpg "PCB Screenshot")
+![The Osprette V2](./images/osprette-v2-1.jpg)
+![PCB screenshot](./pictures/pcb-screenshot.jpg)

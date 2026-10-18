@@ -8,4 +8,10 @@ The Osprangle is the 4th revision of the [Osprette][osprette]. It's a 34-key uni
 To order one of these from JLC, just upload `osprangle.zip` for the PCB and `osprangle_plate.zip` for the switch plate to the Order Now page at <https://jlcpcb.com>. Make sure to set a 1.6mm thickness and remove the order number.
 
 
+# Pictures
+
+![The Osprangle](./images/osprangle-1.jpg)
+![The Osprangle held in one hand](./images/osprangle-2.jpg)
+
+
 [osprette]: https://github.com/smores56/osprette
