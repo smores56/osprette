@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "smores")(type "Legacy")(uri "${KIPRJMOD}/smores.pretty/symbols/smores.lib")(options "")(descr ""))
+)

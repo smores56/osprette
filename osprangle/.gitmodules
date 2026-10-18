@@ -1,0 +1,3 @@
+[submodule "pcb/smores.pretty"]
+	path = pcb/smores.pretty
+	url = git@github.com:smores56/smores.pretty.git

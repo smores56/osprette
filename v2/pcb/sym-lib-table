@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "smores")(type "KiCad")(uri "${KIPRJMOD}/smores.pretty/symbols/smores.kicad_sym")(options "")(descr ""))
+  (lib (name "xiao")(type "KiCad")(uri "${KIPRJMOD}/smores.pretty/symbols/xiao.kicad_sym")(options "")(descr ""))
+  (lib (name "evq")(type "KiCad")(uri "${KIPRJMOD}/smores.pretty/symbols/evq.kicad_sym")(options "")(descr ""))
+)

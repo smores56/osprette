@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/kbd/kicad-footprints/kbd.pretty")(options "")(descr ""))
+  (lib (name "keyswitches")(type "KiCad")(uri "${KIPRJMOD}/keyswitches.pretty")(options "")(descr ""))
+  (lib (name "art")(type "KiCad")(uri "${KIPRJMOD}")(options "")(descr ""))
+)

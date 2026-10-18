@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/smores.pretty/footprints")(options "")(descr ""))
+  (lib (name "art")(type "KiCad")(uri "${KIPRJMOD}")(options "")(descr ""))
+)
