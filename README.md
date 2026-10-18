@@ -17,6 +17,8 @@ layout and the same firmware, so they live in one repo now, a folder per board:
 
 Each folder has its own README with ordering details and pictures.
 
+Every board across both families is listed at [smores56/keyboards][index].
+
 # Firmware
 
 They all share a matrix, so they all run the same firmware: `osprette` in QMK
@@ -46,3 +48,4 @@ The split half of the family is [the Clog][clog].
 [zmk-config]: https://github.com/smores56/zmk-config
 [smores-pretty]: https://github.com/smores56/smores.pretty
 [clog]: https://github.com/smores56/clog
+[index]: https://github.com/smores56/keyboards
